@@ -9,13 +9,17 @@
 		&__logo
 			p
 				font-size: (16px)
-			span
+				span
+					font-size: (24px)
+			p:last-child
 				font-size: (9px)
 		&__list
 			width: 355px
 		&__link
 			height: 30px
 			font-size: (9px)
+	.slider
+		height: 300px
 	.slide
 		&__img
 			width: 338px
@@ -29,6 +33,10 @@
 			font-size: (12px)
 	.column
 		width: (400/960)*100%
+	.controls
+		height: 40px
+	.prev,.next
+		height: 39px
 	.latestWork
 		&__name
 			text-align: center
@@ -37,6 +45,7 @@
 		&__link
 			text-align: center
 	.services
+		transform: translateY(-29px)
 		&__service
 			width: 330px
 
@@ -125,3 +134,239 @@
 		font-size: (10px)
 		&__text,&__author
 			line-height: 30px
+
+@media only screen and (max-width: 599px)
+	.topbar
+		height: 16px
+		&__list
+			line-height: 16px
+			font-size: (8px)
+	.header
+		height: 40px
+		&__logo
+			p
+				font-size: (13px)
+				span
+					font-size: (18px)
+			p:last-child
+				font-size: (6px)
+		&__list
+			width: 300px
+		&__link
+			font-size: (8px)
+	.slider
+		height: 200px
+	.slide
+		&__img
+			width: 228px
+		&__text
+			width: 180px
+			p
+				font-size: (13px)
+			span
+				font-size: (8px)
+		&__button
+			width: 70px
+			height: 16px
+			line-height: 16px
+			font-size: (8px)
+	.column
+		width: (350/960)*100%
+	.controls
+		height: 20px
+	.prev,.next
+		height: 19px
+		background-size: 25%
+	.services
+		transform: translateY(-24px)
+		&__service
+			width: 180px
+		&__name
+			height: 20px
+			line-height: 20px
+			font-size: (11px)
+		&__text
+			margin-top: 10px
+			font-size: (8px)
+		&__img
+			width: 50px
+	.shout
+		font-size: (9px)
+		margin-bottom: 0px
+	.latestWork
+		justify-content: center
+		margin-bottom: 10px
+		&__name
+			font-size: (11px)
+			margin-top: 10px
+		&__img
+			width: 100px
+			margin: 10px auto
+		&__text
+			font-size: (8px)
+			margin-bottom: 4px
+		&__link
+			font-size: (8px)
+	.footer
+		padding-bottom: 15px
+		font-size: (8px)
+		&__name
+			font-size: 11px
+			height: 40px
+			line-height: 40px
+	.blogPost
+		&__text, &__title
+			font-size: (8px)
+		&__date
+			font-size: (6px)
+	.linkBlock
+		&__li
+			line-height: 1.4
+	.form
+		margin-bottom: 10px
+		&__text
+			font-size: (8px)
+			height: 20px
+		&__submit
+			height: 20px
+			width: 50px
+			font-size: (8px)
+	.newsletter
+		&__link
+			i
+				width: 20px
+				height: 20px
+				line-height: 20px
+				font-size: 10px
+	.copyright
+		height: 20px
+		font-size: (8px)
+		&__text,&__author
+			line-height: 20px
+
+@media only screen and (max-width: 479px)
+	.topbar
+		height: 12px
+		&__list
+			line-height: 12px
+			font-size: (6px)
+	.header
+		height: 30px
+		&__logo
+			margin-left: 5px
+			p
+				font-size: (8px)
+				span
+					font-size: (13px)
+			p:last-child
+				font-size: (4px)
+		&__list
+			width: 200px
+			height: 25px
+			line-height: 1px
+			margin-right: 5px
+		&__link
+			font-size: (5px)
+	.slider
+		height: 135px
+	.slide
+		padding: 0px 5px
+		&__img
+			width: 148px
+		&__text
+			width: 140px
+			p
+				font-size: (9px)
+			span
+				margin: 8px 0px
+				font-size: (6px)
+		&__button
+			width: 54px
+			height: 12px
+			line-height: 12px
+			font-size: (6px)
+	.column
+		width: (350/960)*100%
+	.controls
+		left: 5px
+		right: 5px
+		height: 16px
+	.prev,.next
+		height: 15px
+		background-size: 20%
+	.services
+		justify-content: space-around
+		padding: 0px 12.5px
+		margin-bottom: -10px
+		transform: translateY(-18px)
+		&__service
+			width: 135px
+		&__name
+			height: 16px
+			line-height: 16px
+			font-size: (8px)
+		&__text
+			margin-top: 5px
+			line-height: 1.2
+			font-size: (6px)
+		&__img
+			width: 50px
+	.shout
+		padding: 0px 12.5px
+		font-size: (7px)
+	.latestWork
+		padding: 0px 5px
+		justify-content: space-around
+		margin-bottom: 10px
+		&__name
+			font-size: (9px)
+			margin-top: 5px
+		&__img
+			width: 66px
+			margin: 5px auto
+		&__text
+			font-size: (6px)
+			margin-bottom: 4px
+		&__link
+			font-size: (6px)
+	.footer
+		padding-bottom: 15px
+		font-size: (6px)
+		&__name
+			font-size: (9px)
+			height: 22px
+			line-height: 22px
+	.blogPost
+		&__text 
+			width: 100%
+			margin-top: 5px
+			font-size: (6px)
+		&__title
+			font-size: (6px)
+		&__date
+			font-size: (4px)
+	.linkBlock
+		&__li
+			line-height: 1.4
+	.form
+		margin-bottom: 10px
+		&__text
+			font-size: (6px)
+			height: 16px
+		&__submit
+			height: 12px
+			width: 35px
+			font-size: (6px)
+	.newsletter
+		&__link
+			i
+				margin-right: 5px
+				width: 10px
+				height: 10px
+				line-height: 10px
+				font-size: 6px
+	.copyright
+		height: 14px
+		font-size: (6px)
+		&__text,&__author
+			line-height: 14px
