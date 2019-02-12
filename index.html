@@ -12,9 +12,17 @@
 </head>
 <body>
 	<div class="page">
-
+		<!-- <nav class="nav">
+			<a rel="nofollow" rel="noreferrer" href="#" class="nav__item link">HOMEPAGE</a>
+			<a rel="nofollow" rel="noreferrer" href="#" class="nav__item link">STYLE DEMO</a>
+			<a rel="nofollow" rel="noreferrer" href="#" class="nav__item link">FULL WIDTH</a>
+			<a rel="nofollow" rel="noreferrer" href="#" class="nav__item link">PORTFOLIO</a>
+			<a rel="nofollow" rel="noreferrer" href="#" class="nav__item link">GALLERY</a>
+			<a rel="nofollow" rel="noreferrer" href="#" class="nav__item link">DROPDOWN</a>
+		</nav> -->
 		<!--################# Topbar #################-->
 		<div class="topbar">
+			<a href="#" class="navBtn"><span></span></a>
 			<div class="topbar__list">
 				<a href="#" class="topbar__link link">Sign Up</a> |
 				<a href="#" class="topbar__link link">Login</a> |
@@ -24,7 +32,7 @@
 		</div>
 
 		<!--################# Header #################-->
-		<header class="header">
+		<header class="header header--active">
 			<div class="header__logo">
 				<p><span>R</span>EVELATION</p>
 				<p>Free PSD Website Template</p>
@@ -117,7 +125,7 @@
 
 		<!--################# Latest Work #################-->
 		<div class="latestWork">
-			<div class="column">
+			<div class="latestWork__column column">
 				<div class="latestWork__name">Indonectetus facilis</div>
 				<img src="images/latestWork/lastWork.png" class="latestWork__img" alt="Latest Work" title="Latest Work">
 				<div class="latestWork__text">
@@ -125,7 +133,7 @@
 				</div>
 				<a href="#" class="latestWork__link link">Read More »</a>
 			</div>
-			<div class="column">
+			<div class="latestWork__column column">
 				<div class="latestWork__name">Indonectetus facilis</div>
 				<img src="images/latestWork/lastWork.png" class="latestWork__img" alt="Latest Work" title="Latest Work">
 				<div class="latestWork__text">
@@ -133,7 +141,7 @@
 				</div>
 				<a href="#" class="latestWork__link link">Read More »</a>
 			</div>
-			<div class="column">
+			<div class="latestWork__column column">
 				<div class="latestWork__name">Indonectetus facilis</div>
 				<img src="images/latestWork/lastWork.png" class="latestWork__img" alt="Latest Work" title="Latest Work">
 				<div class="latestWork__text">
@@ -141,7 +149,7 @@
 				</div>
 				<a href="#" class="latestWork__link link">Read More »</a>
 			</div>
-			<div class="column">
+			<div class="latestWork__column column">
 				<div class="latestWork__name">Indonectetus facilis</div>
 				<img src="images/latestWork/lastWork.png" class="latestWork__img" alt="Latest Work" title="Latest Work">
 				<div class="latestWork__text">
@@ -191,8 +199,9 @@
 			<div class="newsletter column">
 				<div class="newsletter__name footer__name">Newsletter</div>
 				<form class="form">
-					<input type="text" name="text" placeholder="Name" class="form__text">				
-					<input type="email" name="email" placeholder="Email" class="form__text">			
+					<input type="text" name="text" placeholder="Name" class="form__text" id="name" required>				
+					<input type="email" name="email" placeholder="Email" class="form__text" id="email"
+					required>			
 					<input type="submit" name="submit" value="SUBMIT" class="form__submit">	
 				</form>
 				<div class="newsletter__links">

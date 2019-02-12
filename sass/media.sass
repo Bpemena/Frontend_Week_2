@@ -5,6 +5,7 @@
 			line-height: 20px
 			font-size: (9px)
 	.header
+		display: none
 		height: 60px
 		&__logo
 			p
@@ -32,22 +33,17 @@
 		&__button
 			font-size: (12px)
 	.column
-		width: (400/960)*100%
+		width: 48%
 	.controls
 		height: 40px
 	.prev,.next
 		height: 39px
-	.latestWork
-		&__name
-			text-align: center
-		&__text
-			text-align: center
-		&__link
-			text-align: center
+	.latestWork__column
+		text-align: center
 	.services
 		transform: translateY(-29px)
 		&__service
-			width: 330px
+			width: 48%
 
 @media only screen and (max-width: 767px)
 	.slider
@@ -66,16 +62,12 @@
 			height: 20px
 			line-height: 20px
 			font-size: (10px)
-	.column
-		width: (350/960)*100%
 	.controls
 		height: 30px
 	.prev,.next
 		height: 29px
 	.services
 		transform: translateY(-24px)
-		&__service
-			width: 230px
 		&__name
 			height: 30px
 			line-height: 30px
@@ -162,16 +154,15 @@
 		&__text
 			width: 180px
 			p
-				font-size: (13px)
+				font-size: (15px)
 			span
-				font-size: (8px)
+				font-size: (10px)
+				margin: 5px 0px
 		&__button
-			width: 70px
-			height: 16px
-			line-height: 16px
-			font-size: (8px)
-	.column
-		width: (350/960)*100%
+			width: 80px
+			height: 18px
+			line-height: 18px
+			font-size: (10px)
 	.controls
 		height: 20px
 	.prev,.next
@@ -184,53 +175,66 @@
 		&__name
 			height: 20px
 			line-height: 20px
-			font-size: (11px)
+			font-size: (13px)
 		&__text
 			margin-top: 10px
-			font-size: (8px)
+			line-height: 1.2
+			font-size: (10px)
 		&__img
 			width: 50px
 	.shout
-		font-size: (9px)
-		margin-bottom: 0px
+		font-size: (11px)
+		line-height: 1.2
+		margin: 
+			top: -10px
+			bottom: 0px
 	.latestWork
 		justify-content: center
 		margin-bottom: 10px
 		&__name
-			font-size: (11px)
+			font-size: (13px)
 			margin-top: 10px
 		&__img
 			width: 100px
 			margin: 10px auto
 		&__text
-			font-size: (8px)
+			font-size: (10px)
+			line-height: 1.2
 			margin-bottom: 4px
 		&__link
-			font-size: (8px)
+			font-size: (10px)
 	.footer
 		padding-bottom: 15px
-		font-size: (8px)
+		font-size: (10px)
 		&__name
-			font-size: 11px
+			font-size: (13px)
 			height: 40px
 			line-height: 40px
 	.blogPost
-		&__text, &__title
-			font-size: (8px)
+		&__text 
+			width: 100%
+			margin-top: 5px
+			font-size: (10px)
+			line-height: 1.2
+		&__title
+			font-size: (10px)
 		&__date
-			font-size: (6px)
+			font-size: (8px)
+	.companyDetails
+		&__info, &__phone
+			line-height: 1.2
 	.linkBlock
 		&__li
-			line-height: 1.4
+			line-height: 1.3
 	.form
 		margin-bottom: 10px
 		&__text
-			font-size: (8px)
+			font-size: (10px)
 			height: 20px
 		&__submit
 			height: 20px
-			width: 50px
-			font-size: (8px)
+			width: 56px
+			font-size: (10px)
 	.newsletter
 		&__link
 			i
@@ -239,17 +243,19 @@
 				line-height: 20px
 				font-size: 10px
 	.copyright
-		height: 20px
+		height: 14px
 		font-size: (8px)
+		padding: 0px 5px
 		&__text,&__author
-			line-height: 20px
+			line-height: 14px
 
 @media only screen and (max-width: 479px)
 	.topbar
-		height: 12px
+		height: 15px
 		&__list
-			line-height: 12px
-			font-size: (6px)
+			line-height: 15px
+			font-size: (10px)
+			margin: auto 5px
 	.header
 		height: 30px
 		&__logo
@@ -268,25 +274,24 @@
 		&__link
 			font-size: (5px)
 	.slider
-		height: 135px
+		height: 165px
 	.slide
 		padding: 0px 5px
 		&__img
-			width: 148px
+			width: 163px
 		&__text
 			width: 140px
 			p
-				font-size: (9px)
+				font-size: (13px)
 			span
-				margin: 8px 0px
-				font-size: (6px)
+				margin: 4px 0px
+				line-height: 1.1
+				font-size: (10px)
 		&__button
-			width: 54px
-			height: 12px
-			line-height: 12px
-			font-size: (6px)
-	.column
-		width: (350/960)*100%
+			width: 85px
+			height: 16px
+			line-height: 16px
+			font-size: (10px)
 	.controls
 		left: 5px
 		right: 5px
@@ -304,69 +309,63 @@
 		&__name
 			height: 16px
 			line-height: 16px
-			font-size: (8px)
+			font-size: (12px)
 		&__text
 			margin-top: 5px
-			line-height: 1.2
-			font-size: (6px)
+			line-height: 1.1
+			font-size: (10px)
 		&__img
 			width: 50px
 	.shout
 		padding: 0px 12.5px
-		font-size: (7px)
+		font-size: (11px)
+		line-height: 1.1
 	.latestWork
 		padding: 0px 5px
 		justify-content: space-around
 		margin-bottom: 10px
 		&__name
-			font-size: (9px)
+			font-size: (13px)
 			margin-top: 5px
 		&__img
-			width: 66px
+			width: 90px
 			margin: 5px auto
 		&__text
-			font-size: (6px)
+			font-size: (10px)
 			margin-bottom: 4px
+			line-height: 1.1
 		&__link
-			font-size: (6px)
+			font-size: (10px)
 	.footer
-		padding-bottom: 15px
-		font-size: (6px)
+		padding:  0px 5px 15px 5px
+		font-size: (10px)
 		&__name
-			font-size: (9px)
-			height: 22px
-			line-height: 22px
+			font-size: (13px)
+			height: 26px
+			line-height: 26px
 	.blogPost
-		&__text 
-			width: 100%
-			margin-top: 5px
-			font-size: (6px)
-		&__title
-			font-size: (6px)
 		&__date
-			font-size: (4px)
+			font-size: (7px)
 	.linkBlock
 		&__li
 			line-height: 1.4
+	.companyDetails
+		&__info, &__phone
+			line-height: 1.1
 	.form
 		margin-bottom: 10px
 		&__text
-			font-size: (6px)
-			height: 16px
+			font-size: (10px)
+			height: 20px
 		&__submit
-			height: 12px
-			width: 35px
-			font-size: (6px)
+			height: 16px
+			width: 50px
+			font-size: (10px)
 	.newsletter
 		&__link
 			i
 				margin-right: 5px
-				width: 10px
-				height: 10px
-				line-height: 10px
-				font-size: 6px
-	.copyright
-		height: 14px
-		font-size: (6px)
-		&__text,&__author
-			line-height: 14px
+				width: 18px
+				height: 18px
+				line-height: 18px
+				font-size: 10px

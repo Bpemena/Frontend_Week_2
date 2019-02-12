@@ -1,5 +1,13 @@
 $(document).ready(function() {
 	
+	if ($(this).width() < 1000) {
+		$('.navBtn').show()
+		$('.header').hide()
+	} else {
+		$('.navBtn').hide()
+		$('.header').show()
+	}
+
 	$('.next').click(function(e) {
 		e.preventDefault();
 		var	currentImage = $('.slide.curry');
@@ -32,5 +40,15 @@ $(document).ready(function() {
 		prevImage.addClass('curry');
 		$('.slide.curry').css('display','flex')
 	})
+
+	$('.navBtn').on('click',function(e){
+		e.preventDefault();
+		$(this).toggleClass('navBtn--active');
+		$('.header').slideToggle(400, function() {
+			if ($(this).is(':visible')) {
+				$(this).css('display', 'flex');
+			}
+		});
+	});
 
 })

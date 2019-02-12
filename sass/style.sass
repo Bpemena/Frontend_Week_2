@@ -1,15 +1,29 @@
+@mixin navSpan-style 
+	position: absolute
+	width: 15px
+	height: 3px
+	top: 50%
+	left: 50%
+	margin:
+		top: -1.5px
+		left: -7.5px
+	background-color: #fff
+	transition: 0.4s
+
 *
 	box-sizing: border-box
 	margin: 0
 	padding: 0
 	font-family: (Georgia)
 body
-	background-color: #000
+	background-color: rgba(0,0,0,0.8)
 .link
 	color: #9f80a9
 	text-decoration: none
 .column
 	width: 225px
+
+
 
 .page
 	max-width: 1000px
@@ -17,8 +31,8 @@ body
 	background-color: #fff
 
 .topbar
+	position: relative
 	background-color: #55415f
-	height: 30px
 	&__list
 		line-height: 30px
 		text-align: right
@@ -29,6 +43,29 @@ body
 		color: #fff
 	&__link:hover
 		text-decoration: underline
+
+.navBtn
+	display: inline-block
+	width: 15px
+	height: 15px
+	margin-left: 5px
+	position: absolute
+	span
+		@include navSpan-style
+		&::before
+			@include navSpan-style
+			content: ''
+			transform: translateY(-5px)
+		&::after
+			@include navSpan-style
+			content: ''
+			transform: translateY(5px)
+	&--active span
+		height: 0
+		&:before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(-45deg)
 
 .header
 	height: 130px
@@ -60,6 +97,7 @@ body
 			color: #55415f
 			border-bottom: solid 2px #55415f
 			border
+
 
 .slider
 	position: relative
@@ -199,12 +237,12 @@ body
 		line-height: 1.6
 		margin-bottom: 14px
 	&__link
-		display: block
+		display: inline-block
 		border-radius: 5px
 		color: #55415f
-		transition: all 0.4s
 		&:hover
-			background-color: rgba(0, 0, 0, 0.1)
+			text-decoration: underline
+
 .footer
 	display: flex
 	justify-content: space-between
@@ -305,6 +343,7 @@ body
 	background-color: #202020
 	color: #807d77
 	border-top: solid 1px #3a3a3a
+	font-size: (12px)
 	&__text
 		float: left
 		line-height: 60px
