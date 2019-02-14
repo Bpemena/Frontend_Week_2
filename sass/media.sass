@@ -8,11 +8,11 @@
 		display: none
 		height: 60px
 		&__logo
-			p
+			&--pStyle
 				font-size: (16px)
-				span
-					font-size: (24px)
-			p:last-child
+			&--spanStyle
+				font-size: (24px)
+			&--pLastStyle
 				font-size: (9px)
 		&__list
 			width: 355px
@@ -26,9 +26,9 @@
 			width: 338px
 		&__text
 			width: 310px
-			p
+			&--pStyle
 				font-size: (24px)
-			span
+			&--spanStyle
 				font-size: (12px)
 		&__button
 			font-size: (12px)
@@ -53,9 +53,9 @@
 			width: 288px
 		&__text
 			width: 250px
-			p
+			&--pStyle
 				font-size: (16px)
-			span
+			&--spanStyle
 				font-size: (10px)
 		&__button
 			width: 100px
@@ -116,11 +116,10 @@
 			font-size: (10px)
 	.newsletter
 		&__link
-			i
-				width: 20px
-				height: 20px
-				line-height: 20px
-				font-size: 10px
+			width: 20px
+			height: 20px
+			line-height: 20px
+			font-size: 10px
 	.copyright
 		height: 30px
 		font-size: (10px)
@@ -164,33 +163,24 @@
 			&:after
 				transform: rotate(-45deg)
 	.topbar
+		position: fixed
+		width: 100%
 		height: 16px
+		margin-top: -16px
 		&__list
 			line-height: 16px
 			font-size: (8px)
-	.header
-		height: 40px
-		&__logo
-			p
-				font-size: (13px)
-				span
-					font-size: (18px)
-			p:last-child
-				font-size: (6px)
-		&__list
-			width: 300px
-		&__link
-			font-size: (8px)
 	.slider
+		margin-top: 16px
 		height: 200px
 	.slide
 		&__img
 			width: 228px
 		&__text
 			width: 180px
-			p
+			&--pStyle
 				font-size: (15px)
-			span
+			&--spanStyle
 				font-size: (10px)
 				margin: 5px 0px
 		&__button
@@ -272,11 +262,10 @@
 			font-size: (10px)
 	.newsletter
 		&__link
-			i
-				width: 20px
-				height: 20px
-				line-height: 20px
-				font-size: 10px
+			width: 20px
+			height: 20px
+			line-height: 20px
+			font-size: 10px
 	.copyright
 		height: 14px
 		font-size: (8px)
@@ -288,29 +277,14 @@
 	.nav
 		top: 15px
 	.topbar
+		margin-top: -15px
 		height: 15px
 		&__list
 			line-height: 15px
 			font-size: (10px)
 			margin: auto 5px
-	.header
-		height: 30px
-		&__logo
-			margin-left: 5px
-			p
-				font-size: (8px)
-				span
-					font-size: (13px)
-			p:last-child
-				font-size: (4px)
-		&__list
-			width: 200px
-			height: 25px
-			line-height: 1px
-			margin-right: 5px
-		&__link
-			font-size: (5px)
 	.slider
+		margin-top: 15px
 		height: 165px
 	.slide
 		padding: 0px 5px
@@ -318,9 +292,9 @@
 			width: 163px
 		&__text
 			width: 140px
-			p
+			&--pStyle
 				font-size: (13px)
-			span
+			&--spanStyle
 				margin: 4px 0px
 				line-height: 1.1
 				font-size: (10px)
@@ -400,9 +374,8 @@
 			font-size: (10px)
 	.newsletter
 		&__link
-			i
-				margin-right: 5px
-				width: 18px
-				height: 18px
-				line-height: 18px
-				font-size: 10px
+			margin-right: 5px
+			width: 18px
+			height: 18px
+			line-height: 18px
+			font-size: 10px

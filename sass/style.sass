@@ -26,7 +26,6 @@ body
 	position: absolute
 	z-index: -1
 	opacity: 0
-
 	width: 100%
 	height: 100%
 	background-color: rgba(0,0,0,0.8)
@@ -34,6 +33,9 @@ body
 	&--active
 		z-index: 100
 		opacity: 1
+
+
+
 .page
 	position: relative
 	max-width: 1000px
@@ -97,11 +99,11 @@ body
 		text-align: center
 	&__logo
 		padding: 5px
-		p // .--fontsize
+		&--pStyle
 			font-size: (12px)
-			span
-				font-size: (18px)
-		p:last-child
+		&--spanStyle
+			font-size: (18px)
+		&--pLastStyle
 			font-size: (9px)
 			color: #999999
 	&--active
@@ -114,11 +116,11 @@ body
 	align-items: center
 	&__logo
 		margin-left: 20px
-		p // .--fontsize
+		&--pStyle
 			font-size: (26px)
-			span
-				font-size: (36px)
-		p:last-child
+		&--spanStyle
+			font-size: (36px)
+		&--pLastStyle
 			font-size: (12px)
 			color: #999999
 	&__list
@@ -154,10 +156,10 @@ body
 		align-self: center
 	&__text
 		width: 386px 
-		p
+		&--pStyle
 			font-size: (36px)
 			line-height: 1.2
-		span
+		&--spanStyle
 			display: block
 			font-size: (16px)
 			line-height: 1.4
@@ -361,20 +363,20 @@ body
 			color: #9f81a9
 .newsletter
 	&__link
-		i
-			width: 32px
-			height: 32px
-			line-height: 32px
-			text-align: center
-			font-size: (14px)
-			background-color: #353535
-			color: #807d77
-			border-radius: 50%
-			margin-right: 10px
-			transition: all 0.4s
-			&:hover
-				color: #000
-				background-color: rgba(225,228,225, 0.8)
+		display: inline-block
+		width: 32px
+		height: 32px
+		line-height: 32px
+		text-align: center
+		font-size: (14px)
+		background-color: #353535
+		color: #807d77
+		border-radius: 50%
+		margin-right: 10px
+		transition: all 0.4s
+		&:hover
+			color: #000
+			background-color: rgba(225,228,225, 0.8)
 
 .copyright
 	padding: 0px 20px
