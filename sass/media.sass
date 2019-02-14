@@ -147,7 +147,7 @@
 				margin:
 					top: -1.5px
 					left: -7.5px
-				transform: translateY(-5px)
+				transform: translateY(-5px) 
 			&::after
 				width: 15px
 				height: 3px
@@ -157,6 +157,12 @@
 					top: -1.5px
 					left: -7.5px
 				transform: translateY(5px)
+		&--active span
+			height: 0
+			&:before
+				transform: rotate(45deg)
+			&:after
+				transform: rotate(-45deg)
 	.topbar
 		height: 16px
 		&__list
