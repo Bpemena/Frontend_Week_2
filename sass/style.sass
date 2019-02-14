@@ -1,12 +1,12 @@
 @mixin navSpan-style 
 	position: absolute
-	width: 15px
-	height: 3px
+	width: 20px
+	height: 4px
 	top: 50%
 	left: 50%
 	margin:
-		top: -1.5px
-		left: -7.5px
+		top: -2px
+		left: -10px
 	background-color: #fff
 	transition: 0.4s
 
@@ -22,16 +22,27 @@ body
 	text-decoration: none
 .column
 	width: 225px
+.darkening
+	position: absolute
+	z-index: -1
+	opacity: 0
 
-
-
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,0.8)
+	transition: all 0.4s
+	&--active
+		z-index: 100
+		opacity: 1
 .page
+	position: relative
 	max-width: 1000px
 	margin: 0 auto
 	background-color: #fff
 
 .topbar
 	position: relative
+	z-index: 101
 	background-color: #55415f
 	&__list
 		line-height: 30px
@@ -46,8 +57,8 @@ body
 
 .navBtn
 	display: inline-block
-	width: 15px
-	height: 15px
+	width: 20px
+	height: 20px
 	margin-left: 5px
 	position: absolute
 	span
@@ -55,17 +66,46 @@ body
 		&::before
 			@include navSpan-style
 			content: ''
-			transform: translateY(-5px)
+			transform: translateY(-8px)
 		&::after
 			@include navSpan-style
 			content: ''
-			transform: translateY(5px)
+			transform: translateY(8px)
 	&--active span
 		height: 0
 		&:before
 			transform: rotate(45deg)
 		&:after
 			transform: rotate(-45deg)
+
+.nav
+	position: fixed
+	z-index: 102
+	top: 16px
+	left: -130px
+	border-radius: 0 0 20px 0
+	background-color: #55415f 
+	transition: all 0.4s
+	&__item
+		display: block
+		border-top: solid 1px #fff
+		width: 130px
+		height: 30px
+		line-height: 30px
+		font-size: 10px
+		color: #fff
+		text-align: center
+	&__logo
+		padding: 5px
+		p // .--fontsize
+			font-size: (12px)
+			span
+				font-size: (18px)
+		p:last-child
+			font-size: (9px)
+			color: #999999
+	&--active
+		left: 0px
 
 .header
 	height: 130px
@@ -74,7 +114,7 @@ body
 	align-items: center
 	&__logo
 		margin-left: 20px
-		p
+		p // .--fontsize
 			font-size: (26px)
 			span
 				font-size: (36px)
@@ -97,7 +137,6 @@ body
 			color: #55415f
 			border-bottom: solid 2px #55415f
 			border
-
 
 .slider
 	position: relative

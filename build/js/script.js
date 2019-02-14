@@ -44,11 +44,19 @@ $(document).ready(function() {
 	$('.navBtn').on('click',function(e){
 		e.preventDefault();
 		$(this).toggleClass('navBtn--active');
-		$('.header').slideToggle(400, function() {
-			if ($(this).is(':visible')) {
-				$(this).css('display', 'flex');
-			}
-		});
+
+		if ($(document).width() < 600) {
+			$('.nav').toggleClass('nav--active');
+			$('.darkening').toggleClass('darkening--active');
+		} 
+		if ($(document).width() >= 600) {
+			$('.header').slideToggle(400, function() {
+				if ($(this).is(':visible')) {
+					$(this).css('display', 'flex');
+				}
+			});
+		}
+
 	});
 
 })
